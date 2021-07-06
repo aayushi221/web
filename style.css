@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+  /* font-size: 14px; */
+}
+section {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+  background-image: url("https://insights.emeritus.org/02423465a21727c3537b7358ccffcc77.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.navbar {
+  background-color: black;
+  overflow: none;
+  position: fixed;
+  top: 0;
+  width: 95%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  top: 0;
+  margin-right: 5%;
+  position: sticky;
+}
+.first {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-weight: normal;
+  font-size: 25px;
+}
+.second {
+  margin-bottom: 5%;
+  margin-right: 5%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.btn {
+  margin-bottom: 15%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 2% 0; */
+  margin-top: 4%;
+  /* background-color: green; */
+}
+
+.boxes .box {
+  width: 95%;
+  margin: 50px;
+  display: table;
+  justify-content: center;
+  align-items: center;
+}
+.boxes .box .box-row {
+  display: table-row;
+}
+.boxes .box .box-cell {
+  display: table-cell;
+  width: 33%;
+  padding: 10px;
+}
+.boxes .box .box-cell.box1 {
+  /*                 background:green;  */
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.boxes .box .box-cell.box2 {
+  justify-content: center;
+  align-items: center;
+}
+.boxes .box .box-cell.box3 {
+  justify-content: center;
+  align-items: center;
+}
+.h4 {
+  font-size: 20px;
+}
+
+#boxdiv {
+  margin: 20px 0;
+}
+
+#rectangle {
+  /* color: green; */
+  width: 30%;
+  position: relative;
+  left: 33.33%;
+  border: 3px solid #00be6d;
+  margin-top: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+li {
+  text-align: left;
+}
+.footer {
+  background-color: #383838;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: green;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #000;
+  background-color: green;
+}
+
+.hr {
+  /* max-width: 90%; */
+  display: flex;
+  flex-direction: column;
+  margin: 2% 10%;
+}
+.last {
+  margin: 0 10%;
+  color: #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .last > h3 {
+  margin-top: 2%;
+} */
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
