@@ -1,6 +1,8 @@
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,15 +13,22 @@ body {
   /* font-size: 14px; */
 }
 section {
-  height: 90%;
+  height: 100%;
   width: 90%;
   margin-left: 5%;
-  margin-right: 5%;
+  /* margin-right: 5%; */
   overflow: hidden;
   background-image: url("https://insights.emeritus.org/02423465a21727c3537b7358ccffcc77.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media screen and (max-width:1220px){
+  section {
+    background-size: cover;
+  }
+}
+
 
 .middle {
   display: flex;
@@ -29,31 +38,44 @@ section {
 }
 .navbar {
   background-color: black;
+  box-sizing: border-box;
   overflow: none;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   width: 95%;
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   padding-bottom: 15px;
   padding-top: 15px;
-  top: 0;
-  margin-right: 5%;
-  position: sticky;
+  /* top: 0; */
+  margin-right: 9%;
+  position: relative;
 }
+
 .first {
   margin-bottom: 5%;
   margin-top: 5%;
   font-weight: normal;
   font-size: 25px;
 }
+@media screen and (max-width:1220px){
+  .first {
+    font-size: 10px;
+    margin-top: 15%;
+  }
+}
 .second {
   margin-bottom: 5%;
   margin-right: 5%;
   font-size: 18px;
   font-weight: lighter;
+}
+@media screen and (max-width:1220px){
+  .second {
+    font-size: 10px;
+  }
 }
 
 .btn {
@@ -77,6 +99,13 @@ button {
 button:hover {
   background-color: green;
 }
+@media screen and (max-width:1220px){
+  button{
+  font-size: 10px;
+  padding: 10px 20px;
+
+  }
+}
 
 .tagline {
   display: flex;
@@ -85,6 +114,14 @@ button:hover {
   /* margin: 2% 0; */
   margin-top: 4%;
   /* background-color: green; */
+}
+@media screen and (max-width:1220px){
+  .tagline{
+  overflow: wrap;
+  margin:3% 5% ;
+  text-align: center;
+
+  }
 }
 
 .boxes .box {
@@ -133,11 +170,33 @@ button:hover {
   margin-top: 10%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (max-width:1220px){
+  #recatangle{
+    /* width:100%; */
+    margin-right: -50%;
+    margin-top: 5%;
+  }
 }
+
+@media screen and (max-width:1220px){
+  .boxes .box .box-row{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+}
+@media screen and (max-width:1220px){
+  .boxes .box .box-cell{
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5%;
+  }
+}
+
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -227,6 +286,8 @@ li {
 }
 @media (max-width: 574px) {
   .footer-col {
-    width: 100%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
   }
 }
