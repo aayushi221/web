@@ -10,11 +10,16 @@ body {
   background-color: black;
   font-family: sans-serif;
   color: white;
+  width: 100%;
+  min-height: 100vh;
+  /* overflow: hidden; */
   /* font-size: 14px; */
 }
 section {
   height: 100%;
   width: 90%;
+  /* display: flex;
+  flex-flow:column; */
   margin-left: 5%;
   /* margin-right: 5%; */
   overflow: hidden;
@@ -28,7 +33,6 @@ section {
     background-size: cover;
   }
 }
-
 
 .middle {
   display: flex;
@@ -44,6 +48,7 @@ section {
   /* top: 0; */
   width: 95%;
 }
+
 nav {
   display: flex;
   justify-content:space-between;
@@ -52,6 +57,19 @@ nav {
   /* top: 0; */
   margin-right: 9%;
   position: relative;
+}
+@media screen and (max-width:360px){
+  nav{
+    /* max-width: 30%; */
+    margin-right: 10%;
+    margin-left: -3%;
+  }
+}
+
+@media screen and (max-width:690px){
+  section {
+    display: none;
+  }
 }
 
 .first {
@@ -106,6 +124,67 @@ button:hover {
 
   }
 }
+/* @media screen and (max-width:680px){
+  .navbar{
+    display:none;
+  }
+} */
+
+
+@media screen and (max-width:680px){
+  section{
+    /* max-width: 30%; */
+    margin-right: 10%;
+    margin-left: -3%;
+  }
+}
+
+@media (max-width: 415px){
+   .boxes {
+     display:flex;
+     position: relative;
+     top:70px;
+     justify-content: center;
+   }
+   .box-row{
+    display: flex;
+    margin-left: 32px;
+    justify-content: center;
+    align-items: center;
+   }
+   
+  .mobileNavbar {
+    background-color: black;
+    padding-left:15px;
+  }
+
+  .mobile{
+    width: 100%;
+    background-image: url("https://insights.emeritus.org/6b8347e3a6dabbef1f2abb5850701bb5.png");
+    background-size: contain;
+ }
+  .mobile > .middle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 70vw;
+    position:relative;
+    left: 49px;
+    top: 144px;
+  }
+
+  .middle > .first {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+     }
 
 .tagline {
   display: flex;
@@ -120,7 +199,8 @@ button:hover {
   overflow: wrap;
   margin:3% 5% ;
   text-align: center;
-
+  position:relative;
+  top:100px;
   }
 }
 
@@ -180,13 +260,15 @@ button:hover {
 
 @media screen and (max-width:1220px){
   .boxes .box .box-row{
-    width:100%;
+    width:80%;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
   }
 }
+
+
 @media screen and (max-width:1220px){
   .boxes .box .box-cell{
     width:100%;
@@ -291,3 +373,10 @@ li {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 1536px) and (min-width: 690px) {
+  .mobile {
+    display:none;
+  }
+}
+
