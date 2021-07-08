@@ -176,10 +176,22 @@ button:hover {
 
   .middle > .first {
     display: flex;
+    position: relative;
+    overflow: wrap;
+    top: 0px;
+    left: 10px;
     font-size: 20px;
-    justify-content: center;
-    align-items: center;
-  }
+    text-align: center;
+}
+.middle > .second {
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 15px;
+  font-size: 15px;
+  text-align: center;
+  
+}
 
   footer {
     margin-top: 20px;
